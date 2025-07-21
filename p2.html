@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yoga & Meditation</title>
+  <link rel="stylesheet" href="styleee.css"/>
+</head>
+<body>
+  <header>
+    <div class="logo">🧘‍♀️ Yoga Bliss</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#yoga">Yoga</a>
+          
+         </li>
+        <li><a href="#meditation">Meditation</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#about">About</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Welcome to Yoga Bliss</h1>
+    <p>Discover inner peace and balance through Yoga and Meditation</p>
+    <a class="cta" id="get-started">Get Started</a>
+  </section>
+
+  <section class="benefits" id="benefits">
+    <h2>Benefits of Yoga</h2>
+    <div class="benefit-list">
+      <div class="box">🧠 Reduces Stress</div>
+      <div class="box">💪 Improves Flexibility</div>
+      <div class="box">😌 Boosts Mental Health</div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>Why Meditation?</h2>
+    <p>Meditation helps develop mindfulness, reduce anxiety, and increase focus. Practicing daily brings mental clarity and emotional peace.</p>
+  </section>
+
+  <section id="contact" class="contact-form">
+    <h2>Join Our Wellness Community</h2>
+    <form id="form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message or Goals..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Yoga Bliss | All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("get-started").addEventListener("click", () => {
+      document.getElementById("contact").classList.toggle("show");
+    });
+
+    document.getElementById("form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Thank you for joining our Yoga journey!");
+      document.getElementById("contact").classList.remove("show");
+    });
+  </script>
+</body>
+</html>
